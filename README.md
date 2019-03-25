@@ -1,5 +1,11 @@
 # Remote-TV-Lights
-Turn on/off TV leds with a remote control using Atmega168
+Turn on/off TV leds with a remote control.
+
+
+
+![Board top layout](/v2/top_side.png)
+
+![Board bottom layou](/v2/bottom_side.png)
 
 ## Open Hardware
 
