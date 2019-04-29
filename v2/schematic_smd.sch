@@ -551,14 +551,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="CAP-PTH-2.54">
-<description>2 PTH spaced 0.1" apart</description>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="0.7" diameter="1.651"/>
-<pad name="2" x="1.27" y="0" drill="0.7" diameter="1.651"/>
-<text x="0" y="1.016" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-1.016" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-</package>
 <package name="EIA3216">
 <description>Generic EIA 3216 (1206) polarized tantalum capacitor</description>
 <wire x1="-1" y1="-1.2" x2="-2.5" y2="-1.2" width="0.2032" layer="51"/>
@@ -663,6 +655,52 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 <wire x1="3.91" y1="1" x2="3.91" y2="-1" width="0.127" layer="21"/>
 </package>
+<package name="0402">
+<description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-0.2704" y1="0.2286" x2="0.2704" y2="0.2286" width="0.1524" layer="51"/>
+<wire x1="0.2704" y1="-0.2286" x2="-0.2704" y2="-0.2286" width="0.1524" layer="51"/>
+<wire x1="-1.2" y1="0.65" x2="1.2" y2="0.65" width="0.0508" layer="39"/>
+<wire x1="1.2" y1="0.65" x2="1.2" y2="-0.65" width="0.0508" layer="39"/>
+<wire x1="1.2" y1="-0.65" x2="-1.2" y2="-0.65" width="0.0508" layer="39"/>
+<wire x1="-1.2" y1="-0.65" x2="-1.2" y2="0.65" width="0.0508" layer="39"/>
+<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
+<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.3048" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="0805">
+<description>&lt;p&gt;&lt;b&gt;Generic 2012 (0805) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="0" y="0.889" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.889" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-1.5" y1="0.8" x2="1.5" y2="0.8" width="0.0508" layer="39"/>
+<wire x1="1.5" y1="0.8" x2="1.5" y2="-0.8" width="0.0508" layer="39"/>
+<wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.0508" layer="39"/>
+<wire x1="-1.5" y1="-0.8" x2="-1.5" y2="0.8" width="0.0508" layer="39"/>
+</package>
+<package name="1206">
+<description>&lt;p&gt;&lt;b&gt;Generic 3216 (1206) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.0508" layer="39"/>
+<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.0508" layer="39"/>
+<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -689,39 +727,6 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="22PF" prefix="C">
-<description>&lt;h3&gt;22pF ceramic capacitors&lt;/h3&gt;
-&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0603-50V-5%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-07876"/>
-<attribute name="VALUE" value="22pF"/>
-</technology>
-</technologies>
-</device>
-<device name="-PTH-2.54MM-200V-5%" package="CAP-PTH-2.54">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-09128"/>
-<attribute name="VALUE" value="22pF"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="10UF-POLAR" prefix="C">
 <description>&lt;h3&gt;10.0µF polarized capacitors&lt;/h3&gt;
 &lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
@@ -798,6 +803,87 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <technology name="">
 <attribute name="PROD_ID" value="CAP-12984"/>
 <attribute name="VALUE" value="10µF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1.0UF" prefix="C">
+<description>&lt;h3&gt;1µF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-16V-10%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-00868"/>
+<attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402-16V-10%" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-12417"/>
+<attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805-25V-(+80/-20%)" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-11625"/>
+<attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-1206-50V-10%" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-09822"/>
+<attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805-25V-10%" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08064"/>
+<attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-16V-10%-X7R" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-13930"/>
+<attribute name="VALUE" value="1.0uF"/>
 </technology>
 </technologies>
 </device>
@@ -924,6 +1010,35 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
+<package name="0805">
+<description>&lt;p&gt;&lt;b&gt;Generic 2012 (0805) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="0" y="0.889" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.889" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-1.5" y1="0.8" x2="1.5" y2="0.8" width="0.0508" layer="39"/>
+<wire x1="1.5" y1="0.8" x2="1.5" y2="-0.8" width="0.0508" layer="39"/>
+<wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.0508" layer="39"/>
+<wire x1="-1.5" y1="-0.8" x2="-1.5" y2="0.8" width="0.0508" layer="39"/>
+</package>
+<package name="1206">
+<description>&lt;p&gt;&lt;b&gt;Generic 3216 (1206) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.0508" layer="39"/>
+<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.0508" layer="39"/>
+<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -943,22 +1058,43 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="10KOHM" prefix="R">
-<description>&lt;h3&gt;10kΩ resistor&lt;/h3&gt;
+<deviceset name="0.22OHM" prefix="R">
+<description>&lt;h3&gt;0.22Ω resistor&lt;/h3&gt;
 &lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-HORIZ-1/4W-1%" package="AXIAL-0.3">
+<device name="-0805-1/4W-1%" package="0805">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-12183" constant="no"/>
-<attribute name="VALUE" value="10k" constant="no"/>
+<attribute name="PROD_ID" value="RES-09883"/>
+<attribute name="VALUE" value="0.22" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10OHM" prefix="R">
+<description>&lt;h3&gt;10Ω resistor&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-1206-1/4W-1%" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08705"/>
+<attribute name="VALUE" value="10"/>
 </technology>
 </technologies>
 </device>
@@ -969,8 +1105,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-12183"/>
-<attribute name="VALUE" value="10k"/>
+<attribute name="PROD_ID" value="RES-12180"/>
+<attribute name="VALUE" value="10"/>
 </technology>
 </technologies>
 </device>
@@ -981,56 +1117,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-12183" constant="no"/>
-<attribute name="VALUE" value="10k" constant="no"/>
+<attribute name="PROD_ID" value="RES-12180"/>
+<attribute name="VALUE" value="10"/>
 </technology>
 </technologies>
 </device>
-<device name="-VERT-1/4W-5%" package="AXIAL-0.1">
+<device name="-HORIZ-1/4W-1%" package="AXIAL-0.3">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-09435"/>
-<attribute name="VALUE" value="10k"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT_KIT-1/4W-5%" package="AXIAL-0.1-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-09435"/>
-<attribute name="VALUE" value="10k"/>
-</technology>
-</technologies>
-</device>
-<device name="-HORIZ-1/4W-5%" package="AXIAL-0.3">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-09435"/>
-<attribute name="VALUE" value="10k"/>
-</technology>
-</technologies>
-</device>
-<device name="-HORIZ_KIT-1/4W-5%" package="AXIAL-0.3-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-09435"/>
-<attribute name="VALUE" value="10k"/>
+<attribute name="PROD_ID" value="RES-12180"/>
+<attribute name="VALUE" value="10"/>
 </technology>
 </technologies>
 </device>
@@ -1041,56 +1141,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-12183"/>
-<attribute name="VALUE" value="10k"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT-1/6W-5%" package="AXIAL-0.1">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-08375"/>
-<attribute name="VALUE" value="10k"/>
-</technology>
-</technologies>
-</device>
-<device name="-VERT_KIT-1/6W-5%" package="AXIAL-0.1-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-08375"/>
-<attribute name="VALUE" value="10k"/>
-</technology>
-</technologies>
-</device>
-<device name="-HORIZ-1/6W-5%" package="AXIAL-0.3">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-08375"/>
-<attribute name="VALUE" value="10k"/>
-</technology>
-</technologies>
-</device>
-<device name="-HORIZ_KIT-1/6W-5%" package="AXIAL-0.3-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-08375"/>
-<attribute name="VALUE" value="10k"/>
+<attribute name="PROD_ID" value="RES-12180"/>
+<attribute name="VALUE" value="10"/>
 </technology>
 </technologies>
 </device>
@@ -1101,8 +1153,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-00824"/>
-<attribute name="VALUE" value="10k"/>
+<attribute name="PROD_ID" value="RES-12581"/>
+<attribute name="VALUE" value="10"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-1/10W-5%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09834"/>
+<attribute name="VALUE" value="10"/>
 </technology>
 </technologies>
 </device>
@@ -5032,20 +5096,21 @@ Source: http://www.osram.convergy.de/</description>
 </part>
 <part name="CRYSTAL" library="SparkFun-Clocks" deviceset="CRYSTAL-16MHZ" device="PTH-HC49US" value="16MHz"/>
 <part name="U1" library="SparkFun-IC-Microcontroller" deviceset="ATMEGA328P_PDIP" device="" value="328P"/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="22PF" device="-PTH-2.54MM-200V-5%" value="22pF"/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="22PF" device="-PTH-2.54MM-200V-5%" value="22pF"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" value="10uF"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="10KOHM" device="-HORIZ-1/4W-1%" value="10k"/>
-<part name="USB" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 <part name="J2" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="DCJ0202" device="" package3d_urn="urn:adsk.eagle:package:7491/1"/>
 <part name="INFRA" library="SparkFun-Connectors" deviceset="CONN_03" device="" value="455-1750-1-ND"/>
 <part name="TRANS" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="TIP41C" device="" package3d_urn="urn:adsk.eagle:package:29487/2"/>
-<part name="LEDS" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 <part name="SWITCH" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM" value=""/>
 <part name="LED1" library="adafruit" deviceset="LED" device="5MM"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="10KOHM" device="-HORIZ-1/4W-1%" value="220"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="10KOHM" device="-HORIZ-1/4W-1%" value="220"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="10KOHM" device="-HORIZ-1/4W-1%" value="470ohm"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="0.22OHM" device="-0805-1/4W-1%" value="10k"/>
+<part name="R6" library="SparkFun-Resistors" deviceset="10OHM" device="-1206-1/4W-1%" value="1k"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="10OHM" device="-1206-1/4W-1%" value="470"/>
+<part name="R8" library="SparkFun-Resistors" deviceset="10OHM" device="-1206-1/4W-1%" value="470"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="1.0UF" device="-1206-50V-10%" value="22pF"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="1.0UF" device="-1206-50V-10%" value="22pF"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="1.0UF" device="-1206-50V-10%" value="1uF"/>
+<part name="USB" library="SparkFun-Connectors" deviceset="CONN_02" device="JST-PTH-2-KIT"/>
+<part name="LEDS" library="SparkFun-Connectors" deviceset="CONN_02" device="JST-PTH-2-KIT" value="Leds"/>
 </parts>
 <sheets>
 <sheet>
@@ -5066,25 +5131,9 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="NAME" x="111.76" y="54.102" size="1.778" layer="95"/>
 <attribute name="VALUE" x="111.76" y="-12.7" size="1.778" layer="96"/>
 </instance>
-<instance part="C1" gate="G$1" x="93.98" y="17.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="91.059" y="19.304" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="96.139" y="19.304" size="1.778" layer="96" font="vector" rot="R90"/>
-</instance>
-<instance part="C2" gate="G$1" x="93.98" y="25.4" smashed="yes" rot="R90">
-<attribute name="NAME" x="91.059" y="26.924" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="96.139" y="26.924" size="1.778" layer="96" font="vector" rot="R90"/>
-</instance>
 <instance part="C4" gate="G$1" x="86.36" y="53.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="85.725" y="54.356" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="90.551" y="54.356" size="1.778" layer="96" font="vector" rot="R90"/>
-</instance>
-<instance part="R1" gate="G$1" x="132.08" y="58.42" smashed="yes">
-<attribute name="NAME" x="132.08" y="59.944" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="132.08" y="56.896" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
-<instance part="USB" gate="G$1" x="86.36" y="66.04" smashed="yes" rot="R270">
-<attribute name="VALUE" x="81.534" y="68.58" size="1.778" layer="96" font="vector" rot="R270"/>
-<attribute name="NAME" x="91.948" y="68.58" size="1.778" layer="95" font="vector" rot="R270"/>
 </instance>
 <instance part="J2" gate="G$1" x="198.12" y="12.7" smashed="yes">
 <attribute name="NAME" x="195.58" y="16.51" size="1.778" layer="95"/>
@@ -5097,10 +5146,6 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="NAME" x="223.52" y="40.64" size="1.778" layer="95"/>
 <attribute name="VALUE" x="223.52" y="38.1" size="1.778" layer="96"/>
 </instance>
-<instance part="LEDS" gate="G$1" x="248.92" y="15.24" smashed="yes" rot="R180">
-<attribute name="VALUE" x="251.46" y="20.066" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="251.46" y="9.652" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
 <instance part="SWITCH" gate="G$1" x="132.08" y="71.12" smashed="yes">
 <attribute name="NAME" x="132.08" y="72.644" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="132.08" y="70.612" size="1.778" layer="96" font="vector" align="top-center"/>
@@ -5109,17 +5154,41 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="NAME" x="136.652" y="84.836" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="136.652" y="86.995" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R2" gate="G$1" x="124.46" y="81.28" smashed="yes">
+<instance part="R5" gate="G$1" x="132.08" y="58.42" smashed="yes">
+<attribute name="NAME" x="132.08" y="59.944" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="132.08" y="56.896" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R6" gate="G$1" x="124.46" y="81.28" smashed="yes">
 <attribute name="NAME" x="124.46" y="82.804" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="124.46" y="79.756" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="R3" gate="G$1" x="137.16" y="66.04" smashed="yes" rot="R90">
+<instance part="R7" gate="G$1" x="137.16" y="66.04" smashed="yes" rot="R90">
 <attribute name="NAME" x="135.636" y="66.04" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="138.684" y="66.04" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="R4" gate="G$1" x="210.82" y="38.1" smashed="yes">
+<instance part="R8" gate="G$1" x="210.82" y="38.1" smashed="yes">
 <attribute name="NAME" x="210.82" y="39.624" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="210.82" y="36.576" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="C3" gate="G$1" x="93.98" y="25.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="91.059" y="26.924" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="96.139" y="26.924" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="C5" gate="G$1" x="93.98" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="91.059" y="19.304" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="96.139" y="19.304" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="C1" gate="G$1" x="231.14" y="38.1" smashed="yes">
+<attribute name="NAME" x="232.664" y="41.021" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="232.664" y="35.941" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="USB" gate="G$1" x="86.36" y="66.04" smashed="yes" rot="R270">
+<attribute name="VALUE" x="81.534" y="68.58" size="1.778" layer="96" font="vector" rot="R270"/>
+<attribute name="NAME" x="91.948" y="68.58" size="1.778" layer="95" font="vector" rot="R270"/>
+</instance>
+<instance part="LEDS" gate="G$1" x="248.92" y="15.24" smashed="yes" rot="R180">
+<attribute name="VALUE" x="251.46" y="20.066" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="251.46" y="9.652" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -5127,24 +5196,15 @@ Source: http://www.osram.convergy.de/</description>
 <nets>
 <net name="VCC" class="0">
 <segment>
-<pinref part="USB" gate="G$1" pin="1"/>
-<pinref part="C4" gate="G$1" pin="+"/>
-<wire x1="86.36" y1="58.42" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="58.42" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="53.34" x2="83.82" y2="48.26" width="0.1524" layer="91"/>
-<junction x="83.82" y="53.34"/>
-<label x="78.74" y="48.26" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="U1" pin="VCC"/>
 <wire x1="109.22" y1="43.18" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
 <label x="104.14" y="43.18" size="1.778" layer="95"/>
 <label x="104.14" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="127" y1="58.42" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
 <label x="116.84" y="58.42" size="1.778" layer="95"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="INFRA" gate="J$1" pin="3"/>
@@ -5167,17 +5227,17 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="127" y1="71.12" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
 <label x="116.84" y="71.12" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="GND" class="0">
 <segment>
-<pinref part="USB" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="58.42" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="-"/>
 <wire x1="91.44" y1="58.42" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="53.34" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
 <junction x="91.44" y="53.34"/>
+<pinref part="USB" gate="G$1" pin="2"/>
 <label x="91.44" y="48.26" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="GND" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="GND"/>
 <wire x1="109.22" y1="-7.62" x2="104.14" y2="-7.62" width="0.1524" layer="91"/>
@@ -5189,16 +5249,15 @@ Source: http://www.osram.convergy.de/</description>
 <label x="132.08" y="-27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="25.4" x2="81.28" y2="25.4" width="0.1524" layer="91"/>
 <label x="81.28" y="25.4" size="1.778" layer="95"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="17.78" x2="88.9" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="17.78" x2="81.28" y2="17.78" width="0.1524" layer="91"/>
-<junction x="88.9" y="17.78"/>
+<wire x1="86.36" y1="17.78" x2="81.28" y2="17.78" width="0.1524" layer="91"/>
 <label x="81.28" y="17.78" size="1.778" layer="95"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="3"/>
@@ -5211,36 +5270,49 @@ Source: http://www.osram.convergy.de/</description>
 <label x="147.32" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="60.96" x2="144.78" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="60.96" x2="144.78" y2="66.04" width="0.1524" layer="91"/>
 <label x="144.78" y="66.04" size="1.778" layer="95"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="TRANS" gate="1" pin="E"/>
 <label x="220.98" y="22.86" size="1.778" layer="95"/>
 <wire x1="220.98" y1="33.02" x2="220.98" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="35.56" x2="231.14" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="33.02" x2="220.98" y2="33.02" width="0.1524" layer="91"/>
+<junction x="220.98" y="33.02"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="+"/>
+<wire x1="86.36" y1="58.42" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="58.42" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="53.34" x2="83.82" y2="48.26" width="0.1524" layer="91"/>
+<junction x="83.82" y="53.34"/>
+<pinref part="USB" gate="G$1" pin="1"/>
+<label x="78.74" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="17.78" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="CRYSTAL" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="17.78" x2="101.6" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="U1" gate="U1" pin="PB7(XTAL2/TOSC2)"/>
 <wire x1="101.6" y1="20.32" x2="109.22" y2="20.32" width="0.1524" layer="91"/>
 <junction x="101.6" y="20.32"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="CRYSTAL" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="25.4" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U1" gate="U1" pin="PB6(XTAL1/TOSC1)"/>
 <wire x1="101.6" y1="25.4" x2="109.22" y2="25.4" width="0.1524" layer="91"/>
 <junction x="101.6" y="25.4"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -5250,9 +5322,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="101.6" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="58.42" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
 <label x="147.32" y="58.42" size="1.778" layer="95"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="12VIN" class="0">
@@ -5264,9 +5336,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="213.36" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LEDS" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="15.24" x2="236.22" y2="15.24" width="0.1524" layer="91"/>
 <label x="236.22" y="15.24" size="1.778" layer="95"/>
+<pinref part="LEDS" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PIN4" class="0">
@@ -5290,10 +5362,10 @@ Source: http://www.osram.convergy.de/</description>
 </segment>
 <segment>
 <pinref part="SWITCH" gate="G$1" pin="2"/>
-<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
-<junction x="137.16" y="71.12"/>
 <label x="147.32" y="71.12" size="1.778" layer="95"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<junction x="137.16" y="71.12"/>
 </segment>
 </net>
 <net name="PIN12" class="0">
@@ -5303,9 +5375,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="160.02" y="-5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="38.1" x2="200.66" y2="38.1" width="0.1524" layer="91"/>
 <label x="200.66" y="38.1" size="1.778" layer="95"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PIN8" class="0">
@@ -5315,33 +5387,36 @@ Source: http://www.osram.convergy.de/</description>
 <label x="160.02" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="81.28" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
 <label x="114.3" y="81.28" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="12VO" class="0">
 <segment>
-<pinref part="LEDS" gate="G$1" pin="2"/>
 <wire x1="241.3" y1="12.7" x2="236.22" y2="12.7" width="0.1524" layer="91"/>
 <label x="233.68" y="10.16" size="1.778" layer="95"/>
+<pinref part="LEDS" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="TRANS" gate="1" pin="C"/>
 <wire x1="220.98" y1="43.18" x2="220.98" y2="48.26" width="0.1524" layer="91"/>
 <label x="220.98" y="45.72" size="1.778" layer="95"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="231.14" y1="43.18" x2="220.98" y2="43.18" width="0.1524" layer="91"/>
+<junction x="220.98" y="43.18"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="TRANS" gate="1" pin="B"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
