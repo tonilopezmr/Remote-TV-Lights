@@ -15,6 +15,7 @@
     "webpack-dev-server": "webpack-dev-server --history-api-fallback"
   },
   "dependencies": {
+    "bulma": "^0.7.5",
     "preact": "^10.0.0"
   },
   "devDependencies": {
