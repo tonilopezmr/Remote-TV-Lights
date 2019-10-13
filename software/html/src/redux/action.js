@@ -1,7 +1,8 @@
 export const UPDATE_SSID = 'update_ssid';
 export const ADD_CODE = 'add_code';
 export const UPDATE_RELAY = 'update_relay';
-export const CLEAN_CODES = 'clean_codes'
+export const CLEAN_CODES = 'clean_codes';
+export const BOARD_RESTART = 'board_restart';
 
 export const updateSsid = ssid => {
     return {
@@ -12,7 +13,7 @@ export const updateSsid = ssid => {
 
 export const addCode = code => {
     return {
-        type: RECEIVE_CODE,
+        type: ADD_CODE,
         code
     };
 };
@@ -28,5 +29,12 @@ export const updateRelay = (relay, boardName) => {
 export const cleanCodes = () => {
     return {
         type: CLEAN_CODES
+    };
+};
+
+export const boardRestart = (restart) => {
+    return {
+        type: BOARD_RESTART,
+        restart
     };
 };

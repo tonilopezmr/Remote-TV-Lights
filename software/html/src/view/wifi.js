@@ -1,5 +1,5 @@
 import { Component, h, render } from 'preact';
-
+import { sendWifi } from '../redux/ws';
 
 export default class WifiPanel extends Component {
 
@@ -10,11 +10,14 @@ export default class WifiPanel extends Component {
             password: "",
             passwordError: false,
             disableSaveButton: true
-        }
+        };
     }
 
     onSaveClick() {
-        console.log(this.state.ssid + this.state.password);
+        if (!this.state.disableSaveButton) {
+            sendWifi(this.state.ssid, this.state.password);
+            this.setState({ ...this.state, ssid: "", password: "" })
+        }
     }
 
     validPassword(password) {
@@ -45,13 +48,13 @@ export default class WifiPanel extends Component {
                     </div>
                     <div class="field">
                         <div class="control">
-                            <input onInput={this.ssidChange.bind(this)}
+                            <input value={state.ssid} onInput={this.ssidChange.bind(this)}
                                 class="input" type="text" placeholder="SSID" />
                         </div>
                     </div>
                     <div class="field">
                         <div class="control">
-                            <input onInput={this.passwordChange.bind(this)}
+                            <input value={state.password} onInput={this.passwordChange.bind(this)}
                                 className={state.passwordError ? "input is-danger" : "input"} type="password" placeholder="Password" />
                         </div>
 
