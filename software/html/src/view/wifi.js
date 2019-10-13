@@ -14,7 +14,7 @@ export default class WifiPanel extends Component {
     }
 
     onSaveClick() {
-        //console.log(this.state.ssid + this.state.password);
+        console.log(this.state.ssid + this.state.password);
     }
 
     validPassword(password) {
@@ -41,7 +41,7 @@ export default class WifiPanel extends Component {
             <section class="section">
                 <div style="max-width: 350px;" class="container">
                     <div class="field is-centered">
-                        <h1 style="text-align: center; margin-bottom: 25px;" class="title">Wifi</h1>
+                        <h1 style="text-align: center;" class="title">Wifi Configuration</h1>
                     </div>
                     <div class="field">
                         <div class="control">
@@ -55,7 +55,9 @@ export default class WifiPanel extends Component {
                                 className={state.passwordError ? "input is-danger" : "input"} type="password" placeholder="Password" />
                         </div>
 
-                        {state.passwordError ? <p class="help is-danger">This email is invalid</p> : ""}
+                        <p style={{
+                            visibility: state.passwordError ? 'visible' : 'hidden'
+                        }} class="help is-danger">This password is invalid, at least 8 characters</p>
                     </div>
                     <a onClick={this.onSaveClick.bind(this)}
                         class="button is-primary is-fullwidth" disabled={state.disableSaveButton}>Save</a>

@@ -1,0 +1,31 @@
+import { store } from './store'
+import {
+    updateRelay
+} from './action'
+
+var websock;
+
+export const startWs = () => {
+    var url = new URL("ws", "http://localhost");
+    url.protocol = "ws:";
+
+    websock = new WebSocket(url.href);
+    websock.onmessage = function (evt) {
+        decodeMessage(evt.data);
+    };
+}
+
+const decodeMessage = (stringMessage) => {
+    console.log("Message -> " + stringMessage);
+
+    const message = JSON.parse(stringMessage)
+    if ('relay' in message && 'boardName' in message) {
+        store.dispatch(updateRelay(message["relay"], message["boardName"]))
+    } else if ('code' in message) {
+        store.dispatch(addCode(message['code']));
+    }
+}
+
+export const toggleRelay = () => {
+    websock.send(JSON.stringify({ action: "relay" }));
+}
