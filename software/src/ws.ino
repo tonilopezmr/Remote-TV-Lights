@@ -16,7 +16,7 @@ DynamicJsonDocument getStatus()
     root["relay"] = getTransistorStatus();
     String boardName = getBoardCode();
     Serial.println("Boardname: " + boardName);
-    root["boardName"] = board;
+    root["boardName"] = boardName;
 
     return root;
 }
@@ -61,8 +61,8 @@ void _wsParse(AsyncWebSocketClient *client, uint8_t *payload, size_t length)
         {
             String ssid = root["ssid"];
             String password = root["password"];
-            sendRestart(client_id)
-                setWifiCredentials(ssid, password);
+            sendRestart(client_id);
+            setWifiCredentials(ssid, password);
         }
         else if (strcmp(action, "codes") == 0)
         {
