@@ -1,14 +1,17 @@
 import {
     UPDATE_SSID,
     UPDATE_RELAY,
-    RECEIVE_CODE
+    ADD_CODE,
+    CLEAN_CODES,
+    BOARD_RESTART
 } from './action'
 
 const INITIAL_STATE = {
-    boardName: "",
+    boardName: "No Board connected",
     ssid: "",
     relay: false,
-    codes: []
+    codes: [],
+    restart: false
 };
 
 export const reducer = (state = INITIAL_STATE, action) => {
@@ -21,10 +24,16 @@ export const reducer = (state = INITIAL_STATE, action) => {
             };
         case UPDATE_SSID:
             return { ...state, ssid: action.ssid };
-        case RECEIVE_CODE:
-            return { ...state, codes: [...state.codes, action.code] };
+        case ADD_CODE:
+            var newState = state;
+            if (!state.codes.includes(action.code)) {
+                newState = { ...state, codes: [...state.codes, action.code] };
+            }
+            return newState;
         case CLEAN_CODES:
             return { ...state, codes: [] }
+        case BOARD_RESTART:
+            return { ...state, restart: action.restart }
         default:
             return state;
     }

@@ -1,6 +1,8 @@
 import { store } from './store'
 import {
-    updateRelay
+    updateRelay,
+    addCode,
+    boardRestart
 } from './action'
 
 var websock;
@@ -23,7 +25,24 @@ const decodeMessage = (stringMessage) => {
         store.dispatch(updateRelay(message["relay"], message["boardName"]))
     } else if ('code' in message) {
         store.dispatch(addCode(message['code']));
+    } else if ('restart' in message) {
+        store.dispatch(boardRestart(true));
     }
+}
+
+export const sendWifi = (ssid, password) => {
+    websock.send(JSON.stringify({
+        action: "wifi",
+        ssid,
+        password
+    }));
+}
+
+export const sendCodes = (codes) => {
+    websock.send(JSON.stringify({
+        action: "codes",
+        codes
+    }));
 }
 
 export const toggleRelay = () => {

@@ -16,7 +16,7 @@ DynamicJsonDocument getStatus()
     root["relay"] = getTransistorStatus();
     String boardName = getBoardCode();
     Serial.println("Boardname: " + boardName);
-    root["boardName"] = board;
+    root["boardName"] = boardName;
 
     return root;
 }
@@ -61,6 +61,7 @@ void _wsParse(AsyncWebSocketClient *client, uint8_t *payload, size_t length)
         {
             String ssid = root["ssid"];
             String password = root["password"];
+            sendRestart(client_id);
             setWifiCredentials(ssid, password);
         }
         else if (strcmp(action, "codes") == 0)
@@ -127,6 +128,16 @@ void wsSend(uint32_t client_id, DynamicJsonDocument root)
         serializeJson(root, reinterpret_cast<char *>(buffer->get()), len + 1);
         client->text(buffer);
     }
+}
+
+void sendRestart(uint32_t client_id)
+{
+    const size_t capacity = JSON_OBJECT_SIZE(1);
+    DynamicJsonDocument root(capacity + 30);
+
+    root["restart"] = true;
+
+    wsSend(client_id, root);
 }
 
 void sendCode(String code)
