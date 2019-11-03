@@ -8,16 +8,16 @@
   "license": "MIT",
   "scripts": {
     "build": "NODE_ENV=production webpack -p --progress && ./embedded.sh",
+    "build:op": "NODE_ENV=production webpack -p --progress && node cssoptimizer.js",
     "start": "npm run webpack-dev-server -- --env.mode development",
+    "op:css": "node cssoptimizer.js",
     "clean": "rimraf build",
     "test": "jest --coverage",
     "test:watch": "yarn run -s test -- --watch",
     "webpack-dev-server": "webpack-dev-server --history-api-fallback"
   },
   "dependencies": {
-    "bulma": "^0.7.5",
     "preact": "^10.0.0",
-    "websocket": "^1.0.30",
     "ws": "^7.1.2"
   },
   "devDependencies": {
@@ -31,6 +31,7 @@
     "html-webpack-inline-source-plugin": "^1.0.0-beta.2",
     "html-webpack-plugin": "^4.0.0-beta.8",
     "style-loader": "^0.20.2",
+    "uncss": "^0.17.2",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.1.14"
