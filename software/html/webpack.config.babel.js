@@ -1,6 +1,7 @@
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import HtmlWebpackInlineSourcePlugin from 'html-webpack-inline-source-plugin';
+import webpack from 'webpack'
 import path from 'path';
 const ENV = process.env.NODE_ENV || 'development';
 
@@ -50,7 +51,10 @@ export default {
       minify: { collapseWhitespace: true },
       inlineSource: '(.js|.css)$'
     }),
-    new HtmlWebpackInlineSourcePlugin(HtmlWebpackPlugin)
+    new HtmlWebpackInlineSourcePlugin(HtmlWebpackPlugin),
+    new webpack.DefinePlugin({
+      'process.env.production': ENV === "production"      
+    })
   ]),
 
   stats: { colors: true },

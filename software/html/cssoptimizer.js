@@ -47,7 +47,7 @@ uncss(files, options, function (error, output) {
     wstream.write(output);
     wstream.end();
 
-    exec('yarn build', (err, stdout, stderr) => {
+    exec('yarn build:em', (err, stdout, stderr) => {
         if (err) {
             console.log("Error when try to build the project");
             process.exit(1);

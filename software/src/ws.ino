@@ -127,6 +127,7 @@ void wsSend(uint32_t client_id, DynamicJsonDocument root)
     {
         serializeJson(root, reinterpret_cast<char *>(buffer->get()), len + 1);
         client->text(buffer);
+        root.clear();
     }
 }
 
@@ -138,6 +139,7 @@ void sendRestart(uint32_t client_id)
     root["restart"] = true;
 
     wsSend(client_id, root);
+    root.clear();
 }
 
 void sendCode(String code)

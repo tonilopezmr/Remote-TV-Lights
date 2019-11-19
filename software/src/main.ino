@@ -8,7 +8,7 @@
 #include <constants.h>
 #include <ArduinoJson.h>
 
-#include "statics/index.html.gz.h"
+#include "static/index.html.gz.h"
 
 IRrecv irrecv(IRIN);
 decode_results results;

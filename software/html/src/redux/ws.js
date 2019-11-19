@@ -8,7 +8,7 @@ import {
 var websock;
 
 export const startWs = () => {
-    var url = new URL("ws", "http://localhost");
+    var url = new URL("ws", process.env.production ? window.location : "http://localhost");
     url.protocol = "ws:";
 
     websock = new WebSocket(url.href);
